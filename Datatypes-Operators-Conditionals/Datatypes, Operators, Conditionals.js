@@ -57,9 +57,9 @@ console.log("12 - x equals (with x=12)", 12 - x);
 
 let name1 = "john";
 let name2 = "John";
-console.log("name1 === name2", name1 === name2);
+console.log("name1 ==== name2", name1 === name2);
 let name2lowerCase = name2.toLowerCase();
-console.log("name1 === name2lowerCase", name1 === name2lowerCase);
+console.log("name1 ==== name2lowerCase", name1 === name2lowerCase);
 
 /* EXERCISE 8
  Create a variable named x, and assign to it a numeric value less than 10.
@@ -77,27 +77,27 @@ if (x1 < digits.length) {
 }
 
 // also I assume you meant for me to use a big ol if statement so here goes
-if(x1==0) {
+if(x1===0) {
     console.log("zero");
-} else if(x1==1) {
+} else if(x1===1) {
     console.log("one");
-} else if(x1==2) {
+} else if(x1===2) {
     console.log("two");
-} else if(x1==3) {
+} else if(x1===3) {
     console.log("three");
-} else if(x1==4) {
+} else if(x1===4) {
     console.log("four");
-} else if(x1==5) {
+} else if(x1===5) {
     console.log("five");
-} else if(x1==6) {
+} else if(x1===6) {
     console.log("six");
-} else if(x1==7) {
+} else if(x1===7) {
     console.log("seven");
-} else if(x1==8) {
+} else if(x1===8) {
     console.log("eight");
-} else if(x1==9) {
+} else if(x1===9) {
     console.log("nine");
-} else if(x1==9) {
+} else if(x1===9) {
     console.log("zero");
 } else {
     console.log("don't know that number");
