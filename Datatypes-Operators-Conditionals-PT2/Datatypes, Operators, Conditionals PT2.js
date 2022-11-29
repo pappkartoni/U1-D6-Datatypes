@@ -16,9 +16,9 @@ console.log("Two gender test revealed ", gender);
 
 let int1 = 13;
 let int2 = 5;
-let isSumEight = int1 + int2 == 8;
-let isDiffEight = (int1 - int2 == 8) || (int2 - int1 == 8);
-let anythingEight = ((int1 || int2) == 8) || isSumEight || isDiffEight; // || actually returns one of the values so it is welldefined for numbers and just a shorthand for int1 == 8 || int2 == 8
+let isSumEight = int1 + int2 === 8;
+let isDiffEight = (int1 - int2 === 8) || (int2 - int1 === 8);
+let anythingEight = ((int1 || int2) === 8) || isSumEight || isDiffEight; // || actually returns one of the values so it is welldefined for numbers and just a shorthand for int1 === 8 || int2 === 8
 console.log("Did we manage to somehow get to eight?", anythingEight);
 
 /*EX 3
@@ -93,7 +93,7 @@ console.log("Average of", avgNum1, "and", avgNum2, "is:", average);
 let longString1 = "Some string, pretty short all in all";
 let longString2 = "Another string, this one has way more characters, mainly to fill up this page and have a clearly longer string";
 let longerString = longString1.length > longString2.length ? longString1 : (longString2.length > longString1.length ? longString2 : null);
-console.log("Gioven two strings");
+console.log("Given two strings");
 console.log("longString1 =", longString1);
 console.log("longString2 =", longString2);
 if (longerString != null) {
@@ -115,9 +115,10 @@ console.log("Is", maybeInt, "an integer?", isInteger);
  (Ex.: the 20% of 400 is 80)
 */
 
-let percentage = "35%";
+let percentage = "35.23%";
+console.log(parseFloat(percentage))
 let baseValue = 500;
-let percentageOfBase = baseValue * (parseFloat(percentage) / 100);
+let percentageOfBase = (parseFloat(percentage) / 100) * baseValue;
 console.log(`${percentage} of ${baseValue} is ${percentageOfBase}`); //Just to test how this works with ${}
 
 /*EX 9
@@ -125,5 +126,5 @@ console.log(`${percentage} of ${baseValue} is ${percentageOfBase}`); //Just to t
 */
 
 let maybeEven = 123;
-let evenOrOdd = maybeEven % 2 == 0 ? "even" : "odd";
+let evenOrOdd = maybeEven % 2 === 0 ? "even" : "odd";
 console.log(maybeEven, "is", evenOrOdd);
