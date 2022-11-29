@@ -58,6 +58,8 @@ console.log("12 - x equals (with x=12)", 12 - x);
 let name1 = "john";
 let name2 = "John";
 console.log("name1 === name2", name1 === name2);
+let name2lowerCase = name2.toLowerCase();
+console.log("name1 === name2lowerCase", name1 === name2lowerCase);
 
 /* EXERCISE 8
  Create a variable named x, and assign to it a numeric value less than 10.
